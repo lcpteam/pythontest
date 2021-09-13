@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --json --outputFile=reporter.json"
+    "test": "jest --json --outputFile=./report/reporter.json"
   },
   "author": "",
   "license": "MIT",
