@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --json --outputFile=./report/reporter.json"
+    "test": "jest"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^27.1.1"
+    "jest": "^27.1.1",
+    "jest-html-reporters": "^2.1.6"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters", {
+        "publicPath": "./report",
+        "filename": "report.html",
+        "expand": true,
+        "openReport": true}
+      ]
+    ]
   }
 }
