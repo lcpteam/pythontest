@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "axios": "^0.21.4",
     "jest": "^27.1.1",
     "jest-html-reporters": "^2.1.6"
   },
@@ -17,11 +18,13 @@
     "reporters": [
       "default",
       [
-        "jest-html-reporters", {
-        "publicPath": "./report",
-        "filename": "report.html",
-        "expand": true,
-        "openReport": true}
+        "jest-html-reporters",
+        {
+          "publicPath": "./report",
+          "filename": "report.html",
+          "expand": true,
+          "openReport": true
+        }
       ]
     ]
   }
